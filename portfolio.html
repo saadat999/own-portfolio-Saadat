@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saadat's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+<nav class="desktop-nav" >
+    <div class="logo">Saadat Zh</div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Saadat Zh</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="profile" class="container">
+<div class="section__pic-container">
+    <img src="./assets/" alt="">
+</div>
+<div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1>Saadat</h1>
+    <p class="section__text__p2">Frontend Developer</p>
+    <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+            Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+            contact info
+        </button>
+    </div>
+    <div id="socials-container">
+        <img src="https://img.icons8.com/ios11/512/linkedin.png"
+             alt="my linkedin profile"
+             class="icon"
+             onclick="location.href='https://www.linkedin.com/saadat-zholchubaeva'">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+             alt="my github profile"
+             class="icon"
+             onclick="location.href='https://www.github.com/'">
+    </div>
+</div>
+</section>
+
+<section id="about" >
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About me</h1>
+     <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/saadat3.png" alt="saadat profile picture"
+                 alt="profile picture"
+                 class="about-pic">
+        </div>
+         <div class="about-details-container">
+             <div class="about-containers">
+                 <div class="details-container">
+                     <img src="https://cdn-icons-png.flaticon.com/512/3504/3504016.png"
+                          alt="experience icon"
+                          class="icon">
+                     <h3>Experience</h3>
+                     <p>1+ years <br>Frontend Developer</p>
+                 </div>
+                 <div class="details-container">
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Education%2C_Studying%2C_University%2C_Alumni_-_icon.png"
+                          alt="education icon"
+                          class="icon">
+                     <h3>Education</h3>
+                     <p>B.Sc. Bachelors Degree  <br>M.Sc. Masters Degree</p>
+                 </div>
+             </div>
+             <div class="text-container">
+                 <p> I'm Saadat Zholchubaeva, a passionate frontend developer dedicated to building intuitive, responsive, and visually appealing web applications. With expertise in HTML, CSS, JavaScript, TypeScript, and React, I focus on writing clean, efficient code that enhances user experience.
+
+                     I love problem-solving, continuous learning, and pushing the boundaries of web development. My goal is to create impactful digital solutions while inspiring more women to join the tech industry. Let's build something amazing together!
+                 </p>
+             </div>
+         </div>
+     </div>
+    <img src="https://icons.veryicon.com/png/128/internet--web/iview-3-x-icons/ios-arrow-dropdown.png" alt="arrow icon"
+    class="icon arrow"
+    onclick="location.href='#experience'">
+
+</section>
+
+
+<section id="experience">
+    <p class="section__text__p1">Explore My</p>
+      <h1 class="section__text__h1">Experience</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="https://icons.veryicon.com/png/o/miscellaneous/alan-ui/ios-checkmark-circle-4.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://icons.veryicon.com/png/o/miscellaneous/alan-ui/ios-checkmark-circle-4.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://icons.veryicon.com/png/o/miscellaneous/alan-ui/ios-checkmark-circle-4.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>SASS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://icons.veryicon.com/png/o/miscellaneous/alan-ui/ios-checkmark-circle-4.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://icons.veryicon.com/png/o/miscellaneous/alan-ui/ios-checkmark-circle-4.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>TypeScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://icons.veryicon.com/png/o/miscellaneous/alan-ui/ios-checkmark-circle-4.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>React</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://icons.veryicon.com/png/o/miscellaneous/alan-ui/ios-checkmark-circle-4.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Redux</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://icons.veryicon.com/png/o/miscellaneous/alan-ui/ios-checkmark-circle-4.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Material UI</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="https://icons.veryicon.com/png/128/internet--web/iview-3-x-icons/ios-arrow-dropdown.png" alt="arrow icon"
+         class="icon arrow"
+         onclick="location.href='#projects'">
+</section>
+
+
+<section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="./assets/cocktail.corner.webp"
+                 alt="Project One Image" class="project-img">
+            <h2 class="project-title">Cocktail Corner</h2>
+            <div class="btn-container">
+                <a href="https://github.com/saadat999/" class="project-btn">GitHub</a>
+                <a href="https://github.com/saadat999/cocktail.com" class="project-btn">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://img.freepik.com/premium-vector/marketplace-web-banner_118813-10466.jpg"
+                 alt="Project Two Image" class="project-img">
+            <h2 class="project-title">Dordoi Kg</h2>
+            <div class="btn-container">
+                <a href="https://github.com/saadat999/" class="project-btn">GitHub</a>
+                <a href="https://github.com/Arsen745/dordoi-com" class="project-btn">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://cdn.prod.website-files.com/664f7dd49c9231333a00c577/66a9515a7e9e696f8e94b52b_665ccebd7d43d429745da7f3_harvard-cover-c.webp"
+                 alt="Project Three Image" class="project-img">
+            <h2 class="project-title">Harvard website</h2>
+            <div class="btn-container">
+                <a href="https://github.com/saadat999/" class="project-btn">GitHub</a>
+                <a href="https://github.com/saadat999/university" class="project-btn">Live Demo</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <p class="section__text__p1">
+        Get In Touch
+    </p>
+    <h1 class="title">Contact</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/2549/2549872.png" alt="email-icon" class="icon contact-icon email-icon">
+            <p><a href="devilwq99@gmail.com">@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="https://static-00.iconduck.com/assets.00/whatsapp-icon-495x512-y1nyb5ge.png" alt="whatsapp-icon" class="icon contact-icon">
+            <p><a href="https://wa.me/996553202772" target="_blank">WhatsApp</a></p>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyrights &#169; 2025 Saadat Zholchubaeva. All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
