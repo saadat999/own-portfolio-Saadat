@@ -7,7 +7,7 @@
 
 body {
     font-family: "Raleway", serif;
-    background-color: rgba(255, 255, 254, 0.99);
+    background-color: beige;
 }
 
 
@@ -24,7 +24,27 @@ a, .btn {
     transition: all 300ms ease;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixed position for both navbars */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* Ensure it's above other content */
+}
 
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+}
 
 a {
     color: black;
@@ -78,7 +98,7 @@ a:hover {
     width: 100%;
     max-height: 0;
     overflow: hidden;
-    /*transition: all 300ms ease;*/
+    transition: all 300ms ease;
 }
 
 .menu-links a {
@@ -174,7 +194,11 @@ a:hover {
 }
 
 #hamburger-nav {
-    display: none !important;
+    display: none;
+}
+
+.hamburger-menu {
+    display: inline-block;
 }
 
 .hamburger-icon {
@@ -309,6 +333,23 @@ h1 {
     margin-top: 5px;
 }
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 .section__text__p2 {
     font-size: 1.75rem;
@@ -324,6 +365,8 @@ h1 {
 .icon {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    width: 25px;
+    height: 20px;
     padding-right: 5px;
     padding-top: 20px;
 }
@@ -486,6 +529,17 @@ h1 {
     animation: fadeSlideUp 1s ease-in-out forwards;
 }
 
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
@@ -680,10 +734,74 @@ footer p {
     flex-wrap: wrap;
 }
 
+.nav-links-container ul li {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideIn 0.5s forwards;
+}
+
+.nav-links-container ul li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.nav-links-container ul li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.nav-links-container ul li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.nav-links-container ul li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.nav-links-container a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.nav-links-container a:hover {
+    color: #555;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 @media (max-width: 768px) {
     .nav-links-container ul {
-        display: none;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     footer p {
